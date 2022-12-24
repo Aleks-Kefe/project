@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all" />
+    <!--jquery--->
+
+    <link rel="stylesheet" href="JQuery UI/jquery-ui.css">
+</head>
+
+<body>
+    <div id="topnav">
+        <div id="left">
+            <i class="fa fa-search"></i>
+        </div>
+        <div id="center">
+            <img src="images/navlogo.png" width="20%">
+        </div>
+        <div id="right">
+            <i class="fa fa-user"></i>
+        </div>
+    </div>
+
+    <div id="navbarlinks" style="text-transform:uppercase; padding:  15px">
+        <div id="navbarlink1">
+            <i class="fa fa-home"></i>
+            <a href="#">Home</a>
+        </div>
+        <div id="navbarlink2">
+            <i class="fa fa-film"></i>
+            <a href="#">Fantasy</a>
+        </div>
+        <div id="navbarlink3">
+            <i class="fa fa-podcast"></i>
+            <a href="#">News</a>
+        </div>
+        <div id="navbarlink4">
+            <i class="fa fa-user-tie"></i>
+            <a href="#">User</a>
+        </div>
+        <div id="navbarlink5">
+            <i class="fa fa-basketball-ball"></i>
+            <a href="#">FIFA<sup>+</sup></a>
+        </div>
+        <div id="navbarlink6">
+            <i class="fa fa-child"></i>
+            <a href="#">Playzones</a>
+        </div>
+        <div id="navbarlink7">
+            <i class="fa fa-list-alt"></i>
+            <a href="#">Originals</a>
+        </div>
+    </div>
+
+    <div id="centerintro">
+        <div id="centerimg">
+            <img src="images/img1.png" alt="" id="img-responsive" />
+            <p id="centerimgintro" class=""> ECSTASY FOR ARGENTINA.
+                <br/>
+
+                <em style="text-decoration:underline; ">Watch all the world cup highlights here!</em></p>
+        </div>
+    </div>
+
+    <div id="loginbtn">
+        <i class="fa fa-user" style="display:block; margin-left:50%; margin-bottom: 3%; font-size:25px;"></i>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" required />
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required/>
+        <button id="btn" type="submit" style="margin-left:50%; padding:8px; border-radius:3px; margin-top:10px;">Login</button>
+        <div id="loginbottom">
+            <p id="p1">Forgot password?</p>
+            <p id="p2">Sign up</p>
+        </div>
+    </div>
+
+    <!--forgot password--->
+    <div id="forgotpassword">
+        <label for="email">Enter registered email:</label>
+        <input type="email" name="email" id="email" style="margin-left: 10px;" required/> <br>
+        <button type="submit" style="margin-top:10px; margin-left:70%;">Verify Email</button>
+    </div>
+    <!---signin--->
+    <div id="signinbtn">
+
+
+        <p>Your password should contain at least 6 characters, 1 number and 1 capital letter:</p>
+
+        <p>Enter Firstname: <br><input type="text" required></p>
+        <p>Enter Lastname: <br><input type="text" required></p>
+        <p>Enter valid email: <br><input type="email" required></p>
+        <p>Enter password: <br><input type="password" id="password" required></p>
+
+        <p>Re-enter password: <br><input type="password" id="password2" required></p>
+        <button onclick="check()">check</button>
+        <p id="error"></p>
+    </div>
+    <!--login msg-->
+    <div id="loginmsg">
+        <p>Your details are being checked by <br> our server...<br> If it takes too long, refresh the page.</p>
+        <div id="loginmsgbtn">
+            <button type="submit" id="cancel">Cancel</button>
+            <button type="submit" id="wait">Wait</button>
+        </div>
+    </div>
+    <div id="process">
+        <p>Processing...in a minute! </p>
+        <button type="submit" id="ok">ok</button>
+    </div>
+
+    <div id="scrollup">
+        <a href="#topnav"><i class="fa fa-arrow-up"></i></a>
+    </div>
+
+    <div id="latestgame">
+        <div id="latestgametop">
+            <p class="">Matches</p>
+
+            <img src="images/img2.png">
+        </div>
+
+        <div id="latestgamebottom">
+            <img src="images/img3.png">
+        </div>
+
+        <div id="latestgamebottom2">
+            <img src="images/img5.png">
+        </div>
+    </div>
+
+    <div id="signup">
+        <span>Sign in / up for FIFA+ <br>
+Personalise your World Cup Experience <br>
+</span> <br>
+        <button type="submit">Sign up now!</button>
+    </div>
+
+    <div id="update">
+        <div id="updateintro">
+            <p>Latest Across The World of Football</p>
+        </div>
+        <div id="update1" class="flex">
+            <img src="images/img6.png" alt="" />
+            <p>duis doctus quas est interdum adversarium libero parturient mandamus a</p>
+        </div>
+        <div id="update2" class="flex">
+            <img src="images/img7.png" alt="" />
+            <p>duis doctus quas est interdum adversarium libero parturient mandamus a</p>
+        </div>
+        <div id="update3" class="flex">
+            <img src="images/img8.png" alt="" />
+            <p>duis doctus quas est interdum adversarium libero parturient mandamus a</p>
+        </div>
+        <div id="update4" class="flex">
+            <img src="images/img9.png" alt="" />
+            <p>duis doctus quas est interdum adversarium libero parturient mandamus a</p>
+        </div>
+        <div id="update5" class="flex">
+            <img src="images/img10.png" alt="" />
+            <p>duis doctus quas est interdum adversarium libero parturient mandamus a</p>
+        </div>
+        <div id="update6" class="flex">
+            <img src="images/img11.png" alt="" />
+            <p>duis doctus quas est interdum adversarium libero parturient mandamus a</p>
+        </div>
+        <div id="update7" class="flex">
+            <img src="images/img12.png" alt="" />
+            <p>duis doctus quas est interdum adversarium libero parturient mandamus a</p>
+        </div>
+        <div id="update8" class="flex">
+            <img src="images/img13.png" alt="" />
+            <p>duis doctus quas est interdum adversarium libero parturient mandamus a</p>
+        </div>
+        <div id="update9" class="flex">
+            <img src="images/img14.png" alt="" />
+            <p>duis doctus quas est interdum adversarium libero parturient mandamus a</p>
+        </div>
+        <p id="seemore"><em>see more...</em></p>
+    </div>
+    <div id="fifaranking">
+        <div id="fifarankingintro">
+            <p>Top 10 FIFA Ranking</p>
+        </div>
+        <div id="fifarankingimg">
+            <img src="images/rank.jpg" width="100%">
+        </div>
+    </div>
+    <div id="standings">
+        <div id="standingsintro">
+            <p>Europe's Top Five League Standings</p>
+        </div>
+        <div class="standingsimg">
+            <img src="images/img15.png" width="100%">
+        </div>
+        <div class="standingsimg">
+            <img src="images/img16.png">
+        </div>
+        <div class="standingsimg">
+            <img src="images/img17.png">
+
+        </div>
+        <div class="standingsimg">
+            <img src="images/img18.png">
+        </div>
+        <div class="standingsimg">
+            <img src="images/img16.png">
+        </div>
+    </div>
+
+    <div id="google">
+        <img src="images/google1.png">
+        <img src="images/google2.png">
+    </div>
+
+
+    <!--- sticky nav-->
+    <nav id="bottomnav">
+        <div id="navicons">
+            <img src="images/img4.png">
+            <i class="fa fa-play-circle"></i>
+            <i class="fa fa-user-circle"></i>
+            <i class="fa fa-trophy"></i>
+            <a href="#topnav">
+                <i class="fa fa-bars" id="togglemenu"></i>
+            </a>
+        </div>
+    </nav>
+
+    <footer>
+        <div id="footerlinks">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Contact</a>
+            <a href="#">FAQ</a>
+
+            <a href="#">Fixtures</a>
+            <a href="#">Tables</a>
+            <a href="#">Results</a>
+            <a href="#">Teams</a>
+        </div>
+    </footer>
+    <script src="js/JQuery.js"></script>
+    <script src="JQuery UI/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
